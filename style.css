@@ -4,9 +4,20 @@
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-family: 'Dancing Script', cursive;
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+}
+
 body {
   height: 100vh;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  
 }
 
 .logo {
@@ -16,6 +27,8 @@ body {
 }
 
 nav {
+  z-index: 999999999999;
+  position: fixed;
   height: 75px;
   width: 100%;
   display: -webkit-box;
@@ -27,12 +40,13 @@ nav {
   -ms-flex-pack: justify;
   justify-content: flex-start;
   margin: 0;
-  padding: 0 1rem;
+  padding: 0 3rem;
   text-align: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   background: #ffffff;
+  top: 0;
 }
 
 ul {
@@ -97,7 +111,7 @@ a.nav-link:hover {
 }
 
 .bar:nth-child(1) {
-  width: 150%;
+  width: 100%;
 }
 
 .bar:nth-child(2) {
@@ -169,4 +183,187 @@ a.nav-link:hover {
   a.nav-link {
     padding: 0.75rem 0;
   }
+}
+
+
+#acg{
+  display: flex;
+  width: 95%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  vertical-align: center;
+  margin: auto;
+  margin-top: 5%;
+}
+
+
+.img1{
+  width: 50%;
+  height: 70vh;
+  position: relative;
+}
+
+.demo-container{
+  background-color: rgba(86, 119, 130, 0.8);
+  backdrop-filter: blur(5px);
+  width: 50%;
+  text-align: center;
+  padding: 0 3rem;
+  font-size: 30pt;
+  justify-content: space-evenly;
+  position: relative;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#demo{
+  color:wheat;
+}
+
+@import url('https://fonts.cdnfonts.com/css/wedding');
+
+.typewriter {
+  margin-top: 20px;
+  font-family: 'Dancing Script', cursive; 
+  font-weight: 900;
+  font-size: 60pt;                           
+}
+
+
+/*Animação do relógio*/
+  
+.relogio{
+  animation: blink 1s infinite;
+  font-size: 30pt;
+}
+  
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+#festa{
+  color: #567782;
+  background-color: #ecd2c4;
+  border: 2px solid yellowgreen;
+}
+
+#festa h2{
+  text-align: center;
+  padding: 30px;
+  font-weight: 900;
+  margin-top: 20px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 900;
+  font-size: 60pt; 
+}
+
+
+
+.img-festa-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-festa-container img{
+  width: 600px;
+  border-radius: 15px;
+  margin: 15px;
+  margin-bottom: 40px;
+}
+
+.festa-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.eventos{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.eventos *{
+  padding-top: 30px;
+
+}
+
+.eventos h3{
+  font-size: 25pt;
+}
+
+.eventos p{
+  font-size: 15pt;
+}
+
+iframe{
+  border-radius: 15px;
+}
+
+
+.eventos-item{
+  width: 70vh;
+}
+
+
+
+/*Secção onde ficar/ hotéis*/
+#ondeficar{
+  background-color: rgba(86, 119, 130, 0.8);
+  backdrop-filter: blur(5px);
+  text-align: center;
+  padding: 0 3rem;
+  padding-top: 100px;
+  font-size: 30pt;
+  text-decoration: none;
+  color: #fff;
+}
+
+.hoteis{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 95%;
+  justify-content: space-around;
+}
+
+.hotel-item{
+  background-color: rgba(86, 119, 130, 0.4);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 100px;
+  border: 2px solid grey;
+}
+
+.hotel-item a{
+  padding-bottom: 50px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
+
+.hotel-item iframe{
+  margin-top: 75px;
+  margin-bottom: 75px;
 }

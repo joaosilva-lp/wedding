@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt>
 
     <head>
         <meta charset="UTF-8" />
@@ -7,6 +7,12 @@
         <title>Casamento Ana Catarina & Guilherme</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/wedding" rel="stylesheet">
     </head>
 
     <body>
@@ -16,10 +22,11 @@
             <div class="navbar">
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="#" class="nav-link">Ana Catarina & Guilherme</a></li>
-                    <li class="nav-item"><a href="#casamento" class="nav-link">O Casamento</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Direcções</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Onde Ficar</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contribuições</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">A Festa</a></li>
+                    <!-- pequeno almoço/ casamento / festa -->
+                    <li class="nav-item"><a href="#festa" class="nav-link">Direcções</a></li>
+                    <li class="nav-item"><a href="#ondeficar" class="nav-link">Onde Ficar</a></li>
+                    <li class="nav-item"><a href="#contribuicoes" class="nav-link">Contribuições</a></li>
                 </ul>
             </div>
         
@@ -32,20 +39,91 @@
 
         <!-- Secção ACG -->
         <div id="acg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, amet similique cum rem ea ipsam doloremque exercitationem tempore molestias omnis reprehenderit corporis delectus illum suscipit? Quidem a magnam incidunt magni adipisci obcaecati doloremque voluptates cumque error. Consectetur saepe illum possimus voluptatum inventore soluta, maxime reiciendis odio et, rem minus, ex consequuntur delectus. Lorem-150000
+            <div class="demo-container">
+                <p class="typewriter">Casamento Ana Catarina & Guilherme</p>
+                <p id="demo" class="relogio">Faltam:<br></p>
+            </div>
+            <img id="rightdiv" class="img1" src="/img/1.jpeg" alt="">
         </div>
 
-        <!-- Secção ACG -->
-        <div id="casamento" onclick="scrollToSection('casamento')">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, amet similique cum rem ea ipsam doloremque exercitationem tempore molestias omnis reprehenderit corporis delectus illum suscipit? Quidem a magnam incidunt magni adipisci obcaecati doloremque voluptates cumque error. Consectetur saepe illum possimus voluptatum inventore soluta, maxime reiciendis odio et, rem minus, ex consequuntur delectus.
+        <!-- Secção a Festa que passou a Direcções -->
+        <div id="festa" onclick="scrollToSection('festa')">
+            <h2>Direcções</h2>
+            <div class= festa-container>
+                <div class="img-festa-container">
+                    <img src="img/img3.jpeg" alt="">
+                    <img src="img/4.jpeg" alt="">
+                    <img src="img/5.jpeg" alt="">
+                </div>
+                <div class="eventos">
+                    <div class="eventos-item">
+                    <h3>Pequeno Almoço</h3>
+                    <p>O pequeno almoço será servido a partir das 09:00h? no jardim dos pais do noivo, em Ansião.</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3060.200709642363!2d-8.438261124013756!3d39.91452437152479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDU0JzUyLjMiTiA4wrAyNicwOC41Ilc!5e0!3m2!1spt-PT!2spt!4v1692456862664!5m2!1spt-PT!2spt"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="eventos-item">
+                    <h3>Cerimónia</h3>
+                    <p>A cerimónia decorrerá no dia 10/09/2023 às 12:30h na Igreja de Ansião.</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1668.66892152764!2d-8.438380483436728!3d39.91113729818207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2289798aeadda1%3A0x5ade5be38b1b42af!2sIgreja%20Paroquial%20de%20Ansi%C3%A3o!5e0!3m2!1sen!2spt!4v1692434647744!5m2!1sen!2spt"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="eventos-item">
+                    <h3>A Quinta</h3>
+                    <p>A festa continuará na Quinta da Concha em Santiago de Litém (Pombal) a partir das 14h?.</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.0611081352836!2d-8.607647823567754!3d39.872869088560506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2264508f81594f%3A0xd83899179e6e0c4e!2sQuinta%20da%20Concha!5e0!3m2!1sen!2spt!4v1692433793850!5m2!1sen!2spt"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- Secção ACG -->
-        <div id="acg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, amet similique cum rem ea ipsam doloremque exercitationem tempore molestias omnis reprehenderit corporis delectus illum suscipit? Quidem a magnam incidunt magni adipisci obcaecati doloremque voluptates cumque error. Consectetur saepe illum possimus voluptatum inventore soluta, maxime reiciendis odio et, rem minus, ex consequuntur delectus.
+        <!-- Secção Onde Ficar -->
+        <div id="ondeficar">
+            <h1>Onde Ficar</h1>
+            <h6>Abaixo deixamos algumas sugestões de locais onde se podem alojar</h6>
+            <div class="hoteis">
+            <div class="hotel-item">
+                <h3><a href="https://hotel.cardalhotel.com/">Cardal Hotel</a></h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.158918275656!2d-8.630555523566187!3d39.915459685995174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd226670112fbfc1%3A0x612f490707695fa2!2sCardal%20Hotel!5e0!3m2!1sen!2spt!4v1692457150578!5m2!1sen!2spt"
+                    width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="hotel-item">
+                <h3><a href="https://www.belemhotel.pt/belem-hotel">Belém Hotel</a></h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.0104513486326!2d-8.622097910526824!3d39.91878231238322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd226664b0ef6a5f%3A0x286355f9150dc193!2sBelem%20Hotel!5e0!3m2!1sen!2spt!4v1692457195246!5m2!1sen!2spt"
+                    width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="hotel-item">
+                <h3><a href="https://www.quintadocascalheiro.pt/">Quinta do Cascalheiro</a></h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.806765804711!2d-8.528476723565108!3d39.945711784171806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22617872ae56a5%3A0x809c23c08339910!2sQuinta%20do%20Cascalheiro!5e0!3m2!1sen!2spt!4v1692436517677!5m2!1sen!2spt"
+                    width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="hotel-item">
+                <h3><a href="https://ansiturismo.com/">Ansiturismo</a></h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1113.727265099294!2d-8.436214429986185!3d39.9096347866322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22897751976b47%3A0x660b47bb67631a3d!2sAnsiturismo%20-%20Alojamento%20%26%20SPA!5e0!3m2!1sen!2spt!4v1692436262107!5m2!1sen!2spt"
+                    width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
         </div>
 
+        <div id="#contribuicoes">
+            <h2>Contribuições</h2>
 
+        </div>
 
         <script src="index.js"></script>
     </body>
