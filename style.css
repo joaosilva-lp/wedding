@@ -378,9 +378,12 @@ iframe{
   text-align: center;
   padding: 0 3rem;
   padding-top: 100px;
-  font-size: 35pt;
   text-decoration: none;
   background-color: #ecd2c4;
+}
+
+#ondeficar h1{
+  font-size: 60pt;
 }
 
 .hoteis{
@@ -394,44 +397,43 @@ iframe{
   padding-bottom: 150px;
 }
 
-.hotel-item{
-  background-color: #debdab52;
-  backdrop-filter: blur(5px);
-  vertical-align: bottom;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: space-between;
-  padding: 50px 20px 50px 20px;
-  margin: auto;
-  width: 300px;
-  height: 400px;
-  margin-bottom: 30px;
-}
-
-.hotel-item a{
-  text-decoration: none;
-  text-align: center;
-  color: #567782;
-  justify-content: center;
-}
-
-.hotel-item iframe{
-  justify-content: center;
-}
-
 #ondeficar h6{
-  padding-top: 40px;
-}
-
-#ondeficar a{
-  font-family: 'Dancing Script', cursive;
+  padding-top: 30px;
+  font-size: 20pt;
 }
 
 #ondeficar a:hover{
   color: rgb(53, 67, 53);
 }
 
+.caixa{
+  display: flex;
+  flex-direction: column;
+  font-size: 15pt;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.imagens{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin: 20px;
+  margin-top: 30px;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.imagens img{
+  width: 30%;
+  height: auto;
+  margin: 20px;
+  border-radius: 15px;
+}
 
 
 #donativos{
@@ -531,7 +533,8 @@ iframe{
 
 .afesta-item img{
   width: 90%;
-  border-radius: 15px;
+  border-radius: 15px 15px 15px 15px;
+  padding-bottom: 15px;
 }
 
 .afesta-item p {
@@ -635,10 +638,6 @@ iframe{
   .img-festa-container img{
     max-width: 90%;
   }
-  
-  h1{
-    font-size: 35pt;
-  }
 
   .hotel-item{
     font-size: 35pt;
@@ -672,4 +671,21 @@ iframe{
     align-self: center;
 
   }
+
+  .imagens{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+  .imagens img{
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  margin-top: 30px;
+  border-radius: 15px;
+}
 }
