@@ -21,12 +21,12 @@
         <nav>
             <div class="navbar">
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="#" class="nav-link">Ana Catarina & Guilherme</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">A Festa</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">ANA CATARINA & GUILHERME</a></li>
+                    <li class="nav-item"><a href="#afesta" class="nav-link">A FESTA</a></li>
                     <!-- pequeno almoço/ casamento / festa -->
-                    <li class="nav-item"><a href="#festa" class="nav-link">Direcções</a></li>
-                    <li class="nav-item"><a href="#ondeficar" class="nav-link">Onde Ficar</a></li>
-                    <li class="nav-item"><a href="#contribuicoes" class="nav-link">Contribuições</a></li>
+                    <li class="nav-item"><a href="#festa" class="nav-link">DIRECÇÕES</a></li>
+                    <li class="nav-item"><a href="#ondeficar" class="nav-link">ONDE FICAR</a></li>
+                    <li class="nav-item"><a href="#donativos" class="nav-link">CONTRIBUIÇÕES</a></li>
                 </ul>
             </div>
         
@@ -38,18 +38,35 @@
         </nav>
 
         <!-- Secção ACG -->
-        <div id="acg">
+        <div id="acg" onclick="scrollToSection('acg')">
             <div class="demo-container">
-                <p class="typewriter">Casamento Ana Catarina & Guilherme</p>
+                <p class="typewriter">Casamento<br>Ana Catarina<br>&<br>Guilherme</p>
                 <p id="demo" class="relogio">Faltam:<br></p>
             </div>
             <img id="rightdiv" class="img1" src="/img/1.jpeg" alt="">
         </div>
 
-        <!-- Secção a Festa que passou a Direcções -->
+        <!-- A FESTA -->
+        <div id="afesta" onclick="scrollToSection('afesta')">
+            <h2>A Festa</h2>
+            <div class="afesta-container">
+                <div class="afesta-item">
+                    <h2>O Casamento</h2>
+                    <p>Vamos celebrar o nosso amor que começou há 18 anos e queremos que faças parte deste dia tão especial</p>
+                    <img src="img/img6.jpeg" alt="">
+                </div>
+                <div class="afesta-item">
+                    <h2>Os Baptizados</h2>
+                    <p>Fruto do nosso amor nasceram a Teresa Simões, a Clara Simões e o Vasco Simões que serão baptizados neste dia.</p>
+                    <img src="img/img8.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Secção  Festa que passou a Direcções -->
         <div id="festa" onclick="scrollToSection('festa')">
             <h2>Direcções</h2>
-            <div class= festa-container>
+            <div class="festa-container">
                 <div class="img-festa-container">
                     <img src="img/img3.jpeg" alt="">
                     <img src="img/4.jpeg" alt="">
@@ -58,7 +75,7 @@
                 <div class="eventos">
                     <div class="eventos-item">
                     <h3>Pequeno Almoço</h3>
-                    <p>O pequeno almoço será servido a partir das 09:00h? no jardim dos pais do noivo, em Ansião.</p>
+                    <p>O pequeno almoço será servido a partir das 10:30h no jardim dos pais do noivo, em Ansião.</p>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3060.200709642363!2d-8.438261124013756!3d39.91452437152479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDU0JzUyLjMiTiA4wrAyNicwOC41Ilc!5e0!3m2!1spt-PT!2spt!4v1692456862664!5m2!1spt-PT!2spt"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -74,7 +91,7 @@
                     </div>
                     <div class="eventos-item">
                     <h3>A Quinta</h3>
-                    <p>A festa continuará na Quinta da Concha em Santiago de Litém (Pombal) a partir das 14h?.</p>
+                    <p>A festa continuará na Quinta da Concha em Santiago de Litém (Pombal) logo após a cerimónia</p>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.0611081352836!2d-8.607647823567754!3d39.872869088560506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2264508f81594f%3A0xd83899179e6e0c4e!2sQuinta%20da%20Concha!5e0!3m2!1sen!2spt!4v1692433793850!5m2!1sen!2spt"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -85,7 +102,7 @@
         </div>
 
         <!-- Secção Onde Ficar -->
-        <div id="ondeficar">
+        <div id="ondeficar" >
             <h1>Onde Ficar</h1>
             <h6>Abaixo deixamos algumas sugestões de locais onde se podem alojar</h6>
             <div class="hoteis">
@@ -120,8 +137,21 @@
             </div>
         </div>
 
-        <div id="#contribuicoes">
-            <h2>Contribuições</h2>
+        <div id="donativos" onclick="scrollToSection('donativos')">
+            <h2>Contribuições e Contactos</h2>
+            <div class="contrib-container">
+                <div class="contrib-item">
+                    <h6>Ana Catarina Silva</h6>
+                    <p>IBAN:<br>PT50026901180020103484874</p>
+                    <p>MB Way:<br>916311914</p>
+                    <a href="tel:916311914">&#128222; 916 311 914 &#128222;</a>
+                </div>
+                <div class="contrib-item">
+                    <h6>Guilherme Simões</h6>
+                    <p>IBAN:<br>PT50001800035470453102052</p>
+                    <p>MB Way:<br>916454990</p>
+                    <a href="tel:916454990">&#128222; 916 454 990 &#128222;</a>
+                </div>
 
         </div>
 

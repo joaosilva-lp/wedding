@@ -21,7 +21,7 @@ body {
 }
 
 .logo {
-  color: #fff;
+  color: #ecd2c4;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -45,7 +45,7 @@ nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #ffffff;
+  background: #ecd2c4;
   top: 0;
 }
 
@@ -78,15 +78,15 @@ ul {
   align-items: center;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  background-color: #fff;
+  background-color: #ecd2c4;
 }
 
 a.nav-link {
-  color: #000000;
   text-decoration: none;
   font-size: 1.5rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  color:#567782;
 }
 
 a.nav-link:hover {
@@ -140,7 +140,7 @@ a.nav-link:hover {
     width: 300%;
   }
   .nav-menu {
-    background-color: #fff;
+    background-color: #ecd2c4;
     width: 100%;
     height: 100%;
     display: -webkit-box;
@@ -168,7 +168,6 @@ a.nav-link:hover {
 
   a.nav-link {
     margin: 1rem 0;
-    color: #333;
     z-index: 1;
   }
 
@@ -176,6 +175,7 @@ a.nav-link:hover {
     right: 0;
     z-index: 100;
     transition: 0.2s ease;
+
   }
 }
 
@@ -188,39 +188,106 @@ a.nav-link:hover {
 
 #acg{
   display: flex;
-  width: 95%;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   vertical-align: center;
   margin: auto;
-  margin-top: 5%;
+  padding: 5% 5% 5% 5%;
+  background-color: rgba(86, 119, 130, 0.8);
+  backdrop-filter: blur(5px);
 }
 
+#rightdiv{
+  border-radius: 15px !important;
+}
 
 .img1{
   width: 50%;
-  height: 70vh;
-  position: relative;
+  height: auto;
+  flex-grow: 1;
 }
 
 .demo-container{
-  background-color: rgba(86, 119, 130, 0.8);
-  backdrop-filter: blur(5px);
-  width: 50%;
+  width: 40%;
   text-align: center;
-  padding: 0 3rem;
   font-size: 30pt;
   justify-content: space-evenly;
-  position: relative;
-  height: 70vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;
 }
 
+.typewriter{
+  color: #ecd2c4;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .typewriter {
+    padding-top: 20%;
+  }
+  .typewriter p{
+    font-size: 1pt !important;
+  }
+
+  .relogio{
+    padding-top: 20%;
+  }
+
+  .img1{
+    width: 100%;
+    padding: 0;
+  }
+
+  .afesta h2{
+    font-size: 10pt;
+  }
+
+  .afesta-container{
+    flex-direction: column;
+    min-width: 95%;
+  }
+}
+
+.demo-container{
+  animation: slide-in-bl 1s linear 0s 1 normal none;
+}
+
+.img1{
+  animation: slide2-in-bl 1s linear 0s 1 normal none;
+  border-radius: 15px !important;
+  padding: 50px;
+}
+
+@keyframes slide2-in-bl {
+			
+		0% {
+			transform:translateY(-1000px) translateX(1000px);
+			opacity:0;
+		}
+		100% {
+			transform:translateY(0) translateX(0);
+			opacity:1;
+		}
+	}
+
+@keyframes slide-in-bl {
+			
+		0% {
+			transform:translateY(1000px) translateX(-1000px);
+			opacity:0;
+		}
+		100% {
+			transform:translateY(0) translateX(0);
+			opacity:1;
+		}
+	}
+
 #demo{
-  color:wheat;
+  color:#ecd2c4;;
 }
 
 @import url('https://fonts.cdnfonts.com/css/wedding');
@@ -251,14 +318,14 @@ a.nav-link:hover {
 }
 
 #festa{
-  color: #567782;
-  background-color: #ecd2c4;
-  border: 2px solid yellowgreen;
+  color: #ecd2c4;
+  backdrop-filter: blur(5px);
+  background-color: #77929b;
+  padding-top: 80px;
 }
 
 #festa h2{
   text-align: center;
-  padding: 30px;
   font-weight: 900;
   margin-top: 20px;
   font-family: 'Dancing Script', cursive;
@@ -266,41 +333,41 @@ a.nav-link:hover {
   font-size: 60pt; 
 }
 
+.festa-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  margin: auto;
+}
 
 
 .img-festa-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-}
-
-.img-festa-container img{
-  width: 600px;
-  border-radius: 15px;
-  margin: 15px;
-  margin-bottom: 40px;
-}
-
-.festa-container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
-  justify-content: space-around;
   align-items: center;
-  padding-bottom: 30px;
+  flex-grow: 1;
+  margin: auto;
+  width: 50%;
+}
+
+.img-festa-container *{
+  border-radius: 15px;
+  margin-bottom: 40px;
+  max-width: 70%;
 }
 
 .eventos{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-}
-
-.eventos *{
-  padding-top: 30px;
-
+  width: 50%;
 }
 
 .eventos h3{
@@ -320,18 +387,22 @@ iframe{
   width: 70vh;
 }
 
+.eventos-item *{
+  padding-bottom: 30px;
+}
+
 
 
 /*Secção onde ficar/ hotéis*/
 #ondeficar{
-  background-color: rgba(86, 119, 130, 0.8);
+  color: #567782;
   backdrop-filter: blur(5px);
   text-align: center;
   padding: 0 3rem;
   padding-top: 100px;
   font-size: 30pt;
   text-decoration: none;
-  color: #fff;
+  background-color: #ecd2c4;
 }
 
 .hoteis{
@@ -341,29 +412,152 @@ iframe{
   flex-wrap: wrap;
   max-width: 95%;
   justify-content: space-around;
+  align-items: stretch;
+  padding-bottom: 150px;
 }
 
 .hotel-item{
-  background-color: rgba(86, 119, 130, 0.4);
+  background-color: #debdab52;
+  backdrop-filter: blur(5px);
+  vertical-align: bottom;
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
+  justify-content: space-between;
+  padding: 50px 20px 50px 20px;
   margin: auto;
-  margin-bottom: 100px;
-  border: 2px solid grey;
+  width: 300px;
+  height: 400px;
+  margin-bottom: 30px;
 }
 
 .hotel-item a{
-  padding-bottom: 50px;
   text-decoration: none;
   text-align: center;
-  color: #fff;
+  color: #567782;
+  justify-content: center;
 }
 
 .hotel-item iframe{
-  margin-top: 75px;
-  margin-bottom: 75px;
+  justify-content: center;
+}
+
+#ondeficar h6{
+  padding-top: 40px;
+}
+
+#ondeficar a{
+  font-family: 'Dancing Script', cursive;
+}
+
+#ondeficar a:hover{
+  color: rgb(53, 67, 53);
+}
+
+
+
+#donativos{
+  color: #ecd2c4;
+  background-color:#77929b;
+  padding-top: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#donativos h2{
+  text-align: center;
+  font-weight: 900;
+  margin-top: 20px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 900;
+  font-size: 60pt;
+  color: #ecd2c4;
+}
+
+.contrib-container{
+  padding: 100px 0 100px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+
+.contrib-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contrib-item h6{
+  font-size: 30pt;
+  color: #ecd2c4;
+}
+
+.contrib-item p{
+  font-size: 15pt;
+  margin: 10px 0 10px 0;
+  color: #ecd2c4;  
+}
+
+.contrib-item a{
+  font-size: 18pt;
+  text-decoration: none;
+  padding-top: 20px;
+  color:#ecd2c4;
+}
+
+#afesta{
+  background-color: #ecd2c4;
+  backdrop-filter: blur(5px);
+  padding-top: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #567782;;
+}
+
+#afesta h2{
+  text-align: center;
+  font-weight: 900;
+  margin-top: 20px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 900;
+  font-size: 60pt;
+  padding-top: 30px;
+  color: #567782;;
+}
+
+.afesta-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 150px
+}
+
+.afesta-item{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  color: #567782;
+
+}
+
+.afesta-item img{
+  width: 90%;
+  border-radius: 15px;
+}
+
+.afesta-item p {
+  max-width: 90%;
+  padding: 30px 0 30px 0;
+  font-size: 15pt;
 }
