@@ -4,6 +4,10 @@
   scroll-behavior: smooth;
 }
 
+img{
+  border-radius: 15px !important;
+}
+
 h1 {
   font-family: 'Dancing Script', cursive;
 }
@@ -424,13 +428,12 @@ iframe{
   flex-grow: 1;
   margin: 20px;
   margin-top: 30px;
-  align-items: flex-start;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
 }
 
 .imagens img{
-  width: 30%;
-  height: auto;
+  height: 600px;
   margin: 20px;
   border-radius: 15px;
 }
@@ -511,36 +514,35 @@ iframe{
 
 .afesta-container{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  margin: auto;
+  flex-direction: column !important;
+  justify-content: center;
   padding-top: 30px;
-  padding-bottom: 150px
+  padding-bottom: 150px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .afesta-item{
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
+  padding-bottom: 5%;
   color: #567782;
-
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .afesta-item img{
-  width: 90%;
+  height: 600px;
   border-radius: 15px 15px 15px 15px;
-  padding-bottom: 15px;
+  padding: 15px;
 }
 
-.afesta-item p {
+.afesta-container p {
   max-width: 90%;
   padding: 30px 0 30px 0;
-  font-size: 15pt;
+  font-size: 20pt;
 }
 
 @media only screen and (max-width: 992px) {
@@ -572,24 +574,17 @@ iframe{
   }
 
   .afesta-container{
-    flex-direction: column;
+    flex-direction: row !important;
+    flex-grow: 1;
     margin: 0;
     padding: 0;
-    align-items: center;
-    width: 95%;
+    align-items: flex-end;
   }
 
   .afesta-item{
+    display: flex;
     margin-bottom: 5%;
     padding-bottom: 10%;
-    align-items: center;
-    width: 95%;
-  }
-
-  .festa-container{
-    flex-direction: column-reverse;
-    margin: 0;
-    padding: 0;
     align-items: center;
   }
 
@@ -637,7 +632,15 @@ iframe{
 
   .img-festa-container img{
     max-width: 90%;
+    
   }
+
+  .afesta-item img{
+    width: 95vw;
+    height: auto;
+    border-radius: 15px !important;
+  }
+
 
   .hotel-item{
     font-size: 35pt;
@@ -672,20 +675,30 @@ iframe{
 
   }
 
+  .hoteis{
+    margin: auto;    
+  }
+
   .imagens{
   display: flex;
   flex-direction: column;
-  margin: auto;
-  margin-top: 30px;
   align-items: center;
   justify-content: center;
-}
+  flex-grow: 1;
+  margin: auto;
+
+  }
+
 
   .imagens img{
-  width: 100%;
-  height: auto;
-  margin: 5px;
-  margin-top: 30px;
+  margin: 15px 5px 15px 5px;
   border-radius: 15px;
-}
+  object-fit: contain;
+  height: auto;
+  width: 95vw;
+  }
+
+  .caixa{
+    margin: 15% 0 15% 0;
+  }
 }
